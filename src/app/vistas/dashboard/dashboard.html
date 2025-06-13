@@ -1,0 +1,14 @@
+<div class="productos-container">
+  <h2>Productos Disponibles</h2>
+  <div class="productos-grid">
+    <div class="producto-card" *ngFor="let producto of productos">
+      <img [src]="getImageUrl(producto.image)" alt="{{ producto.name }}" />
+      <div class="producto-info">
+        <h3>{{ producto.name }}</h3>
+        <p class="precio">$ {{ producto.price }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button (click)="logout()">Cerrar Sesión</button>

@@ -1,0 +1,98 @@
+/* Aquí reutilizas todo tu CSS anterior sin cambiar nada */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #334cff;
+}
+
+.login-card {
+  display: flex;
+  width: 800px;
+  max-width: 95%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 4px solid #3396ff;
+  border-top: 4px solid #3396ff;
+}
+
+.image-side {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid #3396ff;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-side {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  border-top: 4px solid #3396ff;
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grupos del formulario */
+.form-group {
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3396ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #334cff;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  color: #007BFF;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  display: block;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}

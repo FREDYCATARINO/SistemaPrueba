@@ -1,0 +1,76 @@
+<div class="login-page">
+  <div class="login-card">
+    <div class="image-side">
+      <div>
+        <img src="https://www.paginawebcorporativa.com/wp-content/uploads/2020/10/Tienda-en-linea-pwc.jpg" alt="Registro" />
+      </div>
+    </div>
+    <div class="form-side">
+      <h3>Registro</h3>
+     <form (ngSubmit)="register($event)">
+        <div class="form-group">
+          <label for="name">Nombre completo</label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              [(ngModel)]="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Sebastian Alejandro"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              [(ngModel)]="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="sebastian@gmail.com"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              [(ngModel)]="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="********"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password_confirmation">Confirmar contraseña</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              [(ngModel)]="password_confirmation"
+              id="password_confirmation"
+              name="password_confirmation"
+              class="form-control"
+              placeholder="********"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="btn" type="submit">Registrarse</button>
+        <button class="btn-link" type="button" (click)="goToLogin()">Ir a login</button>
+      </form>
+    </div>
+  </div>
+</div>

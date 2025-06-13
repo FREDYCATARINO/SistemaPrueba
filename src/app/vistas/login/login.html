@@ -1,0 +1,58 @@
+<div class="login-page">
+  <div class="login-card">
+    <div class="image-side">
+      <div>
+
+      <img src="https://www.paginawebcorporativa.com/wp-content/uploads/2020/10/Tienda-en-linea-pwc.jpg" alt="">
+      </div>
+
+    </div>
+    <div class="form-side">
+      <h3>Iniciar Sesión</h3>
+      <form (submit)="login($event)">
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <div class="input-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8.5L12 13L4 8.5V6L12 11L20 6V8.5Z"/>
+            </svg>
+           <input
+  type="email"
+  [(ngModel)]="email"
+  id="email"
+  name="email"
+  class="form-control"
+  placeholder="tucorreo@ejemplo.com"
+  required
+/>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <div class="input-wrapper">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 17C13.66 17 15 15.66 15 14V11H14V9C14 7.34 12.66 6 11 6C9.34 6 8 7.34 8 9V11H7V14C7 15.66 8.34 17 10 17H12ZM12 19H10C7.79 19 6 17.21 6 15V10C6 7.79 7.79 6 10 6H11C13.21 6 15 7.79 15 10V15C15 17.21 13.21 19 12 19Z"/>
+            </svg>
+         <input
+  type="password"
+  [(ngModel)]="password"
+  id="password"
+  name="password"
+  class="form-control"
+  placeholder="Tu contraseña"
+  required
+/>
+
+          </div>
+        </div>
+<button class="btn">Entrar</button>
+<button   class="btn-link" (click)="goToRegister()">Ir a registro</button>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+ec
