@@ -1,0 +1,19 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #334cff;
+  white-space: normal;
+}
+.login-card {
+  display: flex;
+  width: 800px;
+  max-width: 95%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 4px solid #3396ff;
+  border-top: 4px solid #3396ff;
+}
